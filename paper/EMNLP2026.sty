@@ -1,0 +1,59 @@
+%% EMNLP2026.sty -- minimal compatibility stub for local compilation.
+%% For Overleaf submission, replace with the official EMNLP 2026 style file
+%% from https://2026.emnlp.org/
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{EMNLP2026}[2026/01/01 EMNLP 2026 stub]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{geometry}
+\geometry{
+  letterpaper,
+  top=1in, bottom=1in,
+  left=1in, right=1in,
+  columnsep=0.25in
+}
+
+\RequirePackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+\setlength{\bibsep}{0pt plus 0.3ex}
+
+\RequirePackage{times}
+\RequirePackage{microtype}
+\RequirePackage{enumitem}
+\setlist[itemize]{leftmargin=*,itemsep=0pt,parsep=0pt}
+
+% Two-column layout
+\RequirePackage{multicol}
+\AtBeginDocument{%
+  \twocolumn
+}
+
+% Section formatting
+\RequirePackage{titlesec}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{6pt plus 2pt minus 2pt}{3pt plus 1pt}
+\titlespacing*{\subsection}{0pt}{4pt plus 1pt}{2pt plus 1pt}
+
+% Abstract environment
+\renewenvironment{abstract}{%
+  \centerline{\normalfont\large\bfseries Abstract}%
+  \vspace{3pt}%
+  \begin{quote}\small
+}{%
+  \end{quote}%
+  \vspace{6pt}%
+}
+
+% Caption formatting
+\RequirePackage{caption}
+\captionsetup{font=small,labelfont=bf,skip=4pt}
+
+% Paragraph indentation
+\setlength{\parindent}{0.25in}
+\setlength{\parskip}{0pt}
+
+% No headers for anonymous submission
+\pagestyle{plain}
