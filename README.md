@@ -257,7 +257,7 @@ Camouflage payloads are generated once and cached in `results/camouflage_payload
   author = {Anonymous},
   title  = {Evaluating Prompting-Based Defenses Against
             Domain-Camouflaged Injection Attacks},
-  note   = {Under submission at EMNLP 2026 Industry Track},
+  note   = {Under submission at COLM 2026 AdvML-Frontiers × CoTMA Workshop},
   year   = {2026}
 }
 ```
