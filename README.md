@@ -2,7 +2,7 @@
 
 Code and data for the paper:  
 **"Evaluating Prompting-Based Defenses Against Domain-Camouflaged Injection Attacks"**  
-*Under submission at EMNLP 2026 Industry Track*
+*Under submission at COLM 2026 AdvML-Frontiers × CoTMA Workshop*
 
 ---
 
